@@ -144,7 +144,7 @@ h2:after{
 /* HEADER*/
 /*---------------------------*/
 header{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)),url("http://unsplash.com/photos/eSawHr5FhN8/download?force=true");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)),url("img/oskar-krawczyk-172848.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
