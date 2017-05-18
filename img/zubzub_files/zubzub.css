@@ -1,0 +1,434 @@
+/*purple#8E44AD*/
+/*---------------------------*/
+/* BASIC SETUP*/
+/*---------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    
+}
+
+html{
+  color: #555;
+  font-family: "Lato","arial", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+.row{
+  margin: 0 auto;
+}
+
+
+/*---------------------------*/
+/* Links*/
+/*---------------------------*/
+
+a:link,
+a:visited{
+    color:#8E44AD;
+    padding-bottom: 1px;
+        border-bottom: 1px solid transparent;
+    text-decoration: none;
+
+}
+a:hover,
+a:active{
+    color: fuchsia;
+    transition: color 1s, border 0.5s;
+    border-bottom: 1px solid fuchsia;
+}
+
+
+
+/*---------------------------*/
+/* Headings*/
+/*---------------------------*/
+
+
+h1,
+h2,
+h3{
+  font-weight: 300;
+  text-transform: uppercase;
+  word-spacing: 4px;
+}
+h1{margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 200%;
+letter-spacing: 1px;
+
+}
+h2{
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+h3{
+  margin-bottom: 15px;
+}
+h2:after{
+  display: block;
+  background-color: #8E44AD;
+  width: 120px;
+  margin: 0 auto;
+  content: "";
+  height: 2px;
+  margin-top: 30px;
+}
+
+/*---------------------------*/
+/* Paragraphs*/
+/*---------------------------*/
+.long-copy{
+  line-height: 140%;
+  width: 40%;
+  margin-left: 30%;
+}
+
+
+
+
+/*---------------------------*/
+/* BUTTONS*/
+/*---------------------------*/
+.btn:link,
+.btn:visited{ display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn:hover,
+.btn:active{
+  color: pink;
+}
+
+.btn-full:link,
+.btn-full:visited{
+  background-color: #8E44AD;
+  border-radius: 200px;
+    border:solid #8E44AD;
+    margin-right: 15px;
+      transition: background-color 0.5s, color 0.5s;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+  border:solid #8E44AD;
+  border-radius: 200px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+  background-color: #8E44AD;
+
+}
+
+
+/*---------------------------*/
+/* HEADER*/
+/*---------------------------*/
+header{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)),url("http://unsplash.com/photos/eSawHr5FhN8/download?force=true");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-ti{
+  position: absolute;
+  width: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.logo{
+  height: 140px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.top{
+  width: 500px;
+}
+
+.main-nav{
+  list-style: none;
+  float: right;
+  width: 600px;
+  right: 300px;
+  margin-right: 20px;
+  margin-top: 55px;
+}
+.main-nav li{
+  display:inline-block;
+  margin-left: 10px
+  float: left;
+  padding-right: 15px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+  text-decoration: none;
+  color:#fff;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+  padding: 8px 0;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+  border-bottom: 2px solid #8E44AD;
+}
+/* section1*/
+/////**////////////
+.section1{
+
+  position: absolute;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.span-1-of-4{
+  width: 23.8%;
+    float: left;
+
+
+}
+
+.main-box{
+  display: block;
+  margin: 1% 0% 2% 8%;
+}
+.fa{
+  color: #8E44AD;
+}
+section{
+  width: 100%;
+  padding-top: 80px;
+}
+.box{
+  padding: 2%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+
+}
+.large-icon{
+  font-size: 350%;
+  display: block;
+  padding-bottom: 10px;
+  color: #8E44AD;
+
+}
+.box p{
+  font-size: 90%;
+  line-height: 145%;
+  color: black;
+  letter-spacing: 90%;
+  word-spacing: 20%;
+    font-family:'Inknut Antiqua', serif;
+}
+.kaz{
+   width: 90%;
+}
+/*---------------------------*/
+/* meals*/
+/*---------------------------*/
+section-meals{
+  list-style: none;
+  width: 100%;
+
+}
+.section-meals li{
+  display: block;
+float: left;
+width: 25%;
+height: auto;
+}
+.meal-photo{
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+.meal-photo img{
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 0.7;
+
+}
+.meal-photo img:hover {
+  width: 100%;
+  height: auto;
+  transform: scale(1.0);
+  opacity: 1;
+}
+
+.steps-box:first-child{
+   padding-top:30px;
+   text-align: right;
+   padding-right: 3%;
+}
+.steps-box:last-child{
+ padding-top:70px;
+padding-left: 3%;
+
+}
+.iphone{
+  width: 40%;
+}
+.works-step div{
+  color:#8E44AD;
+  border-radius: 50%;
+  border: 2px solid #8E44AD;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  padding: 5px;
+  float:left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+.works-step{
+  margin-bottom: 5%;
+    margin-right: 15%;
+}
+.works-step p{
+  font-size: 100%;
+  text-align: justify;
+}
+.btn-app img{
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+btn-app:link,
+btn-app:visited{
+    border-bottom: 0;
+}
+.works-step:last-of-type{
+  margin-bottom: 80px;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.section-steps{
+  background-color:aliceblue;
+    background-image:linear-gradient(rgba(3,3,3,0.8),#000), url(img/grey-background-for-site11.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: whitesmoke
+}
+.works-step p:last-child{
+  padding-top: 0.4em;
+  margin-top: 1%;
+}
+.base{
+  width: 100%;
+  float: left;
+  list-style: none;
+}
+.fig-base{
+  width: 20%;
+  float: left;
+}
+.fig-base img{
+  width: 100%;
+}
+.cities img{
+  width: 100%;
+  margin-bottom: 15px;
+  height: auto;
+}
+.cit{
+  float: left;
+  font-size: 18px;
+}
+.icon-small{
+  display: inline-block;
+  width: 30px;
+  text-align: left;
+  color: #8E44AD;
+  font-size: 120%;
+}
+
+.save{
+  max-width: 60em;
+  margin: 0 auto;
+}
+.save1{
+  text-align: center;
+  max-width: 80em;
+}
+.cit1{
+  margin-left: 2.25%;
+}
+.customers{
+  width: 100%;
+}
+.twitter-city{
+
+}
+/*---------------------------*/
+/* Testimonials */
+/*---------------------------*/
+
+.section-testi{
+    background-image:linear-gradient(rgba(0,0,0,0.1),#000), url(img/marc-olivier-jodoin-246577.jpg);
+    background-size: cover;
+    color: floralwhite;
+    background-attachment:fixed;
+
+}
+
+blockquote{
+    font-style: italic;
+    line-height: 145%;
+    padding: 2%;
+    position: relative;
+    margin-top: 40px; 
+}
+cite{
+    font-size: 90%;
+    margin-top: 30px;
+    display: block;
+}
+
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+blockquote:before{
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -4px;
+}
+.fishz{
+    width: 85%;
+}
+.cito{ 
+font-size: 110%;}
