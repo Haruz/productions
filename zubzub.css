@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
     
+    
 }
 
 html{
@@ -98,14 +99,16 @@ h2:after{
 /* BUTTONS*/
 /*---------------------------*/
 .haze:link,
-.haze:visited{ display: inline-block;
+.haze:visited,
+input[type=submit]{ display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
   text-decoration: none;
     color: #fff;
 }
 .haz:link,
-.haz:visited{ display: inline-block;
+.haz:visited
+{ display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
   text-decoration: none;
@@ -113,12 +116,15 @@ h2:after{
 }
 
 .btn:hover,
-.btn:active{
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
   color: pink;
 }
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]{
   background-color: #8E44AD;
   border-radius: 200px;
     border:solid #8E44AD;
@@ -151,9 +157,9 @@ header{
     background-attachment: fixed;
 }
 
-.hero-ti{
+.hero{
+    width: 1140px;
   position: absolute;
-  width: 800px;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -172,16 +178,17 @@ header{
 .main-nav{
   list-style: none;
   float: right;
-  width: 600px;
-  right: 300px;
-  margin-right: 20px;
+  width: 550px;
+  right: 0px;
+  margin-right: -10px;
   margin-top: 55px;
+    
 }
 .main-nav li{
   display:inline-block;
-  margin-left: 10px
+  margin-left: 0px
   float: left;
-  padding-right: 15px;
+  padding-right: 10px;
 }
 .main-nav li a:link,
 .main-nav li a:visited{
@@ -294,9 +301,10 @@ height: auto;
 }
 
 .steps-box:first-child{
-   padding-top:30px;
+   padding-top:0px;
    text-align: right;
    padding-right: 3%;
+  margin-top:8%;
 }
 .steps-box:last-child{
  padding-top:70px;
@@ -493,4 +501,115 @@ font-size: 110%;}
 .plan-box div:last-child{
     text-align: center; 
     border: 0;
+}
+
+
+/*---------------------------*/
+/* FORM*/
+/*---------------------------*/
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+input[type=text],
+input[type=email ],
+textarea,
+select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+textarea{
+    height: 100px;
+}
+.contactz{
+    width 80%;
+}
+input[type=checkbox]{
+    padding: 10px 10px 5px 0px;
+}
+select{
+ height: 25px;
+}
+footer{
+    background-color: #333;
+    padding: 20px;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+    margin-top: 6px;
+    text-align: center;
+    font-size: 80%;
+}
+.social{
+    list-style: none;
+    float: right;
+}
+.social li,
+.footer-nav li{
+    
+    display: inline-block;
+    margin-right: 20px;
+}
+.social li:last-child,
+.footer-nav li:last-child{
+    margin-right: 5px;
+}
+
+.social li a:link,
+.social li a:visited,
+.footer-nav li a:link,
+.footer-nav li a:visited{
+    border: 0;
+    text-decoration: none;
+    color: #999;
+}
+.footz{
+    width: 80%;
+}
+footer p{
+    color: #999;
+    text-align: center;
+    font-size: 80%;
+    margin-top: 10px;
+    transition: color 0.25s;
+}
+.social li a:link,
+.social li a:visited{
+    font-size: 150%;
+}
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram{
+    transition: color 0.25s;
+}
+
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+.ion-social-twitter:hover{
+    color: #00aced;
+}
+.ion-social-googleplus:hover{
+    color: #dd4b39;
+}
+.ion-social-instagram:hover{
+    color: #517fa4;
+}
+.footer-nav li a{
+    transition: color 0.25s;
+}
+.footer-nav li a:hover{
+    color:#8E44AD;
+}
+footer p:hover{
+    color: crimson;
+}
+.cito p{
+    visibility: hidden;
+    display: inline;
 }
